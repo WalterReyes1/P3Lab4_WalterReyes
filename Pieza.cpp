@@ -26,19 +26,19 @@ void Pieza::setEspacio(bool _espacio){
     this->espacio=_espacio;
 }
 string Pieza::toString(){
-	if(color == false && espacio==false){
-		return "x";
+	if(getColor() == false && getEspacio()==false){
+		return "X";
 	}
-	if(color==true && espacio==false){
+	if(getColor()==true && getEspacio()==false){
 		return "O";
 	}
-	if(color == false && reina==true && espacio==false){
+	if(getColor() == false && getReina()==true && getEspacio()==false){
 		return "RX";
 	}
-	if(color== true && reina==true && espacio==false){
+	if(getColor()== true && getReina()==true && getEspacio()==false){
 		return "RO";
 	}
-	if(espacio==true){
-		return "_";
+	if(getEspacio()==true){
+		return " ";
 	}
 }

@@ -11,5 +11,8 @@ int main(int argc, char** argv) {
 	d->CrearMatriz(8,8);
 	d->llenarMatriz(8,8,c);
 	d->imprimirMatriz(8,8);
+	d->jugar();
+
+	
 	return 0;
 }

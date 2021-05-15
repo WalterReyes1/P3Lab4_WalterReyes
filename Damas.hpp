@@ -16,9 +16,9 @@ class Damas {
 	Casillas*** CrearMatriz(int,int);
 	void llenarMatriz(int,int,Casillas*);
 	void imprimirMatriz(int,int);
-	bool ganador();	
+	bool ganador(int,int);	
 	bool validarMovimiento();
-	void capturar();
+	bool capturar(int,int);
 	void jugar();
 };
 
